@@ -1,0 +1,164 @@
+body, html{
+    font-family:Montserrat; 
+    margin: 0px; 
+    width: 100%;
+    padding: 0px; 
+    height: 100vh; 
+    background-image: url(../images/bg-body.jpg); 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+}
+
+/* Nav Menu */
+.title{
+    position: absolute; 
+    left: 55%; 
+    top: 50%; 
+    transform: translate(-50%, -50%)
+}
+
+h1{
+    letter-spacing:18px; 
+    font-weight: 400; 
+    text-transform: uppercase; 
+    font-size: 20px; 
+}
+
+.menu-strip{
+    background: #fff; 
+    position: fixed; 
+    width: 10%; 
+    height: 100vh; 
+    border-right: 1px solid rgba(0,0,0,.1); 
+    z-index: 1; 
+}
+
+.toggle-button{
+    position: absolute; 
+    top:10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%)
+}
+
+.toggle-button span {
+	background: #160507;
+	height: 3px;
+	width: 40px;
+	display: block;
+}
+
+.toggle-button span:nth-child(1) {
+	margin: 0px 0px 8px 0px;
+	width: 27px;
+}
+
+.nav .menu{
+    position: absolute; 
+    width:0; 
+    height: 100vh; 
+    left: 10%; 
+    background: #ffff; 
+}
+
+.images{
+    position: absolute; 
+    width:0; 
+    height: 100vh; 
+    left: 55%; 
+    background: url(../images/1.jpg) no-repeat 50% 50%;
+    background-size: cover;  
+}
+
+.bg{
+    position: absolute; 
+    width: 100%; 
+    height: 100vh;
+    /* background: #000;   */
+}
+
+.nav .menu ul{
+    list-style-type:none;
+    position: absolute; 
+    top:36%; 
+    left:36%; 
+    transform: translate(-50%, -50%); 
+    cursor: pointer;
+}
+
+#order {
+	font-size: 14px;
+	font-weight: lighter;
+	color: #afafaf;
+}
+
+.nav .menu ul li {
+	color: #594637;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 60px;
+}
+
+#tag {
+	font-size: 16px;
+	font-weight: lighter;
+	color: #afafaf;
+	transition: .3s;
+	text-transform: lowercase;
+}
+
+.media{
+    position: absolute; 
+    top:80%; 
+    left:20%; 
+    transform: translate(-50%, -50%); 
+}
+
+.media ul li {
+	display: inline-block;
+	color: #afafaf;
+	margin-left: 41px;
+	font-size: 24px;
+}
+
+.nav .menu ul li:hover #tag{
+    color: #a66f2c; 
+    transition: 1s; 
+} 
+
+#menu{
+    background:linear-gradient(#5b5b55, #5b5b5b) left no-repeat, #afafaf; 
+    background-size:0% 100%; 
+    background-clip:text;  
+    -webkit-background-clip:text; 
+    -webkit-text-fill-color: transparent;     
+    transition: 1s; 
+}
+
+#menu:hover{
+    background-size:100% 100%; 
+}
+
+.bg1{
+    background: url(../images/1.jpg) no-repeat 50% 50%; 
+}
+.bg2{
+    background: url(../images/2.jpg) no-repeat 50% 50%; 
+}
+.bg3{
+    background: url(../images/3.jpg) no-repeat 50% 50%; 
+}
+.bg4{
+    background: url(../images/4.jpg) no-repeat 50% 50%; 
+}
+.bg5{
+    background: url(../images/5.jpg) no-repeat 50% 50%; 
+}
+
+.bg1, .bg2, .bg3, .bg4, .bg5{
+    display: block; 
+    background-size: cover;  
+}
+
+.hide{
+    display:none; 
+}
