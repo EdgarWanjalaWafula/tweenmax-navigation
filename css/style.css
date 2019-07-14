@@ -1,22 +1,40 @@
 body, html{
     font-family:Montserrat; 
-    margin: 0px; 
     width: 100%;
     padding: 0px; 
     height: 100vh; 
 }
 
+body, .toggle-button p {
+    margin:0px; 
+}
+
+.toggle-button p, .title, .toggle-button, .nav .menu, .images, .bg, .nav .menu ul, .media{
+    position: absolute; 
+}
+
+.toggle-button{
+    display:flex; 
+}
+
+.toggle-button{
+    align-items:center
+}
+
+.toggle-button, .toggle-button p, .nav ul li{
+    cursor:pointer; 
+}
+
 /* Nav Menu */
 .title{
-    position: absolute; 
-    left: 55%; 
+    left: 50%; 
     top: 50%; 
     transform: translate(-50%, -50%)
 }
 
 h1{
     letter-spacing:18px; 
-    font-weight: 400; 
+    font-weight:500; 
     text-transform: uppercase; 
     font-size: 20px; 
 }
@@ -30,29 +48,48 @@ h1{
 	right: 0;
 }
 
+.toggle-button div, .toggle-button p {
+    transition-duration:700ms; 
+}
+
 .toggle-button{
-    position: absolute; 
     top:10%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
-    cursor: pointer;
     padding: 15px; 
 }
 
+.toggle-button:hover div {
+	transform: translateX(-35px);
+}
+
 .toggle-button span {
-	background: #160507;
-	height:2px;
-	width: 43px;
+	background: #000;
+	height:1px;
+	width: 35px;
 	display: block;
 }
 
 .toggle-button span:nth-child(1) {
-	margin: 0px 0px 6px 0px;
-	width: 27px;
+	margin: 0px 0px 9px auto;
+}
+
+.toggle-button p {
+	padding-left: 5px;
+	transform: translateX(40px);
+	opacity: 0;
+    visibility: hidden;
+    transition-duration: 1100ms; 
+    font-weight:400; 
+}
+
+.toggle-button:hover p {
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(0px);
 }
 
 .nav .menu{
-    position: absolute; 
     width:0; 
     height: 100vh; 
     left:0; 
@@ -60,7 +97,6 @@ h1{
 }
 
 .images{
-    position: absolute; 
     width:0; 
     height: 100vh; 
     left: 50%; 
@@ -69,7 +105,6 @@ h1{
 }
 
 .bg{
-    position: absolute; 
     width: 100%; 
     height: 100vh;
     /* background: #000;   */
@@ -77,11 +112,9 @@ h1{
 
 .nav .menu ul {
 	list-style-type: none;
-	position: absolute;
 	top:50%;
 	left:40%;
 	transform: translate(-50%, -50%);
-	cursor: pointer;
 }
 
 #order {
@@ -117,7 +150,6 @@ h1{
 }
 
 .media {
-	position: absolute;
 	top: 80%;
 	left: 32%;
 	transform: translate(-50%, -50%);
@@ -149,6 +181,7 @@ h1{
 
 #menu:hover{
     background-size:100% 100%; 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 .bg1{

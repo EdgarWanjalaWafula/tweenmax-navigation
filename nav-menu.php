@@ -1,7 +1,10 @@
     <div class="menu-strip">
         <div class="toggle-button">
-            <span></span>
-            <span></span>
+            <div class="">
+                <span></span>
+                <span></span>
+            </div>
+            <p>MENU</p>
         </div>
     </div>
 

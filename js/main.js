@@ -32,9 +32,7 @@ var t1 = new TimelineMax({
 	paused: true
 }); 
 
-
-
-t1.to(".outer-content .title", 1, {
+t1.to(".outer-content .title, .toggle-button span:nth-child(2)", 1, {
 	opacity: 0
 }); 
 
@@ -44,12 +42,12 @@ t1.to(".menu", 1.7, {
 }); 
 
 t1.to(".toggle-button span:nth-child(1)", 1, {
-	x: "400px", 
+	y: "5px", 
 	ease: Expo.easeInOut
 }); 
 
 t1.staggerFrom(".menu ul li", 2, {
-	y:"15px",
+	y:"85px",
 	opacity:0, 
 	ease: Expo.easeInOut}, .2); 
 
